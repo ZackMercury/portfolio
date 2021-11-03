@@ -4,7 +4,7 @@
   "description": "My portfolio website",
   "main": "./src/main.ts",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
     "compile": "tsc -w",
     "start": "node ./dist/bundle.js"
   },
