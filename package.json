@@ -5,8 +5,8 @@
   "main": "./src/main.ts",
   "scripts": {
     "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
-    "compile": "tsc -w",
-    "start": "node ./dist/bundle.js"
+    "watch": "webpack --mode production --watch && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
+    "start": "explorer \"%cd%\\dist\\index.html\" & exit 0"
   },
   "repository": {
     "type": "git",

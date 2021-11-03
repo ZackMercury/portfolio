@@ -8,9 +8,32 @@
 				"kind": "build",
 				"isDefault": true
 			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			},
 			"problemMatcher": [],
 			"label": "npm: build",
 			"detail": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a"
+		},
+		{
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "node ./dist/bundle.js"
 		}
 	]
 }
