@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a"
+		}
+	]
+}
