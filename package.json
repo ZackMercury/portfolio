@@ -4,7 +4,7 @@
   "description": "My portfolio website",
   "main": "./src/main.ts",
   "scripts": {
-    "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
+    "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a && xcopy \"%cd%\\src\\img\" \"%cd%\\dist\\img\" /E /H /C /I /Y && explorer \"%cd%\\dist\\index.html\" & exit 0",
     "watch": "webpack --mode production --watch && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
     "start": "explorer \"%cd%\\dist\\index.html\" & exit 0"
   },
@@ -25,7 +25,6 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "babel-loader": "^8.2.3",
-    "typescript": "^4.4.4",
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1"
   },

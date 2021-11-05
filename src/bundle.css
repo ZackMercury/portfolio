@@ -6,3 +6,51 @@
 html {
     scroll-behavior: smooth;
 }
+
+header, main, footer {
+    width: 100%;
+}
+
+header, article, footer {
+    transition-duration: 0.7s;
+    transition-property: all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header {
+    display: block;
+    height: 100vh;
+    background: url(./img/header.jpg) no-repeat;
+    background-size: cover;
+}
+
+#headerShade {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(2,0,36,0.6250875350140056) 0%, rgba(255,255,255,0) 55%);
+}
+
+main {
+    margin: 50px 0;
+    /*height: 500vh;*/
+}
+
+article {
+    position: relative;
+    left: -400px;
+}
+
+footer {
+    background: #000000;
+    height: 100vh;
+}
+
+.active {
+    left: 0;
+    right: 0;
+    transition-duration: 0.7s;
+    transition-property: all;
+    opacity: 1;
+    visibility: visible;
+}
