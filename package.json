@@ -4,7 +4,7 @@
   "description": "My portfolio website",
   "main": "./src/main.ts",
   "scripts": {
-    "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a && xcopy \"%cd%\\src\\img\" \"%cd%\\dist\\img\" /E /H /C /I /Y && explorer \"%cd%\\dist\\index.html\" & exit 0",
+    "build": "webpack --mode production && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a && xcopy \"%cd%\\src\\img\" \"%cd%\\dist\\img\" /E /H /C /I /Y && xcopy \"%cd%\\src\\fonts\" \"%cd%\\dist\\fonts\" /E /H /C /I /Y && explorer \"%cd%\\dist\\index.html\" & exit 0",
     "watch": "webpack --mode production --watch && copy \"%cd%\\src\\index.html\" \"%cd%\\dist\\index.html\" /a && copy \"%cd%\\src\\bundle.css\" \"%cd%\\dist\\bundle.css\" /a",
     "start": "explorer \"%cd%\\dist\\index.html\" & exit 0"
   },
