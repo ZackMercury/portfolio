@@ -34,7 +34,7 @@ header {
     justify-content: end;
 }
 
-#label {
+#headerLabel {
     color: white;
     margin-right: 50px;
     margin-bottom: 30px;
@@ -45,7 +45,14 @@ header {
 
 main {
     margin: 50px 0;
+    
     /*height: 500vh;*/
+}
+
+#text {
+    margin-left: 30px;
+    font-family: VarelaRound;
+    font-size: 4vh;
 }
 
 article {
@@ -66,7 +73,6 @@ footer {
     opacity: 1;
     visibility: visible;
 }
-
 
 @font-face {
     font-family: "VarelaRound";
