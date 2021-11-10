@@ -14,7 +14,7 @@ const NUM_ENTRIES = __ARTICLES__;
 
 const MIN = 0;
 const MAX = 5;
-const rand: Function = LCG();
+const rand: Function = LCG(4);
 
 const m = new Matrix<number>(1, 1);
 m.data[0][0] = 0;
@@ -122,7 +122,7 @@ let cellObserver:IntersectionObserver = new IntersectionObserver((entries) => {
     })
 }, {
     threshold: 0,
-    rootMargin: "-150px"
+    rootMargin: "-15%"
 });
 
 [...document.getElementsByTagName("td")].forEach(cell => cellObserver.observe(cell))

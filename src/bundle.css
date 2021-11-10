@@ -60,13 +60,15 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
+    border-spacing: 0;
+    border-collapse: separate;
 }
 
 article {
     color: white;
     background: black;
-    width: 13.333vw;
-    height: 13.333vw;
+    width: 13.33333333vw;
+    height: 13.33333333vw;
     position: relative;
 }
 
