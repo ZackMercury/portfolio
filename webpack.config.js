@@ -1,4 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
+const StringInjectionPlugin = require('./plugins/StringInjectionPlugin');
+
+
+const ARTICLE_COUNT = 50;
 
 module.exports = {
   entry: './src/main.ts',
@@ -18,4 +23,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      __ARTICLES__: ARTICLE_COUNT
+    })
+  ]
 };
