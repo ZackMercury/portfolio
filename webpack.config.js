@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const StringInjectionPlugin = require('./plugins/StringInjectionPlugin');
 
 
 const ARTICLE_COUNT = 50;
